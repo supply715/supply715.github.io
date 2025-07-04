@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lead Development Engineer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #333333;
+      --primary: #4f46e5;
+      --card-bg: #f9f9f9;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+    .dark {
+      --bg: #121212;
+      --text: #eeeeee;
+      --primary: #818cf8;
+      --card-bg: #1e1e1e;
+      --shadow: rgba(0, 0, 0, 0.5);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: var(--primary);
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 0.75rem;
+      font-weight: 600;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h2 {
+      border-left: 4px solid var(--primary);
+      padding-left: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px var(--shadow);
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 8px 16px var(--shadow);
+    }
+
+    button {
+      background: #fff;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    button:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-weight:700;">Lead Development Engineer Portfolio</div>
+    <div>
+      <nav>
+        <a href="#profile">Profile</a>
+        <a href="#experience">Experience</a>
+        <a href="#strengths">Strengths</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <button onclick="toggleDarkMode()">🌙 다크모드</button>
+  </header>
+
+  <section id="profile">
+    <h2>Profile</h2>
+    <div class="card">
+      <p>Skilled Lead Development Engineer with extensive experience across global automotive projects. Demonstrates problem-solving, team leadership, and cross-functional collaboration skills with a strong track record in engine calibration, OBD strategy, and drive quality development.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="card">
+      <h3>Lead Development Engineer</h3>
+      <p>General Motors | 2024년 6월 - 현재</p>
+      <ul>
+        <li>Leading D2Ux-2 performance development, managing budgets and workload as GRASS champion.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Engine Lead Calibrator - D2Ux-2</h3>
+      <p>General Motors | 2021년 1월 - 2024년 6월</p>
+      <ul>
+        <li>Led engine calibration for GM's top-selling SUV, Global B architecture projects.</li>
+        <li>Managed team of 30+ calibrators, organized global collaboration trips (Canada, US).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Engine Lead Calibrator - Equinox/Terrain</h3>
+      <p>General Motors | 2020년 1월 - 2021년 12월</p>
+      <ul>
+        <li>Resolved Korean market emission certification failures.</li>
+        <li>Released CAC icing calibration to address top warranty item.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>OBD Diagnostic Strategist - GEM</h3>
+      <p>General Motors | 2016년 1월 - 2019년 12월</p>
+      <ul>
+        <li>Led OBD development for GEM program (Brazil, Mexico regulations).</li>
+        <li>Dispatched to Opel for dynamometer development.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Calibration Specialist - J30x</h3>
+      <p>General Motors | 2008년 1월 - 2015년 12월</p>
+      <ul>
+        <li>Resolved global market issues: Israel, Greece, Austria, Thailand.</li>
+        <li>Led work transfer for GM in-house controller at Opel.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Drive Quality Engineer - Mid size sedan</h3>
+      <p>General Motors | 2005년 7월 - 2007년 12월</p>
+      <ul>
+        <li>Developed pedal progression & AT shift maps optimizing drive quality and fuel economy.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section id="strengths">
+    <h2>Key Strengths</h2>
+    <div class="card">
+      <ul>
+        <li>Global team leadership & communication</li>
+        <li>Problem-solving in complex regulatory & warranty issues</li>
+        <li>Deep knowledge of engine calibration, OBD, and drive quality</li>
+        <li>Budget and workload management (GRASS champion)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/yourgithub" target="_blank">GitHub</a> |
+        <a href="mailto:youremail@example.com">Email</a>
+      </p>
+    </div>
+  </section>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
